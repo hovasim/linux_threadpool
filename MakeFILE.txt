@@ -1,0 +1,9 @@
+all:	hello
+
+hello:  hello2
+	gcc -o threadpool threadpool.c -pthread
+
+hello2:
+	./threadpool
+clean:
+	rm -rf *.o hello
